@@ -70,7 +70,7 @@ def main():
             destination = os.path.join(DOSSIER_OUTPUT, nouveau_nom)
 
             os.rename(full_path, destination)
-            print(f"   📂 Fichier deplace vers : {nouveau_nom}\n")
+            print(f"    📂 Fichier deplace vers : {nouveau_nom}\n")
 
             data['origina_file'] = fichier
             data['final_file'] = nouveau_nom
@@ -87,4 +87,3 @@ def main():
 
 if __name__ ==  "__main__":
     main()
-    
