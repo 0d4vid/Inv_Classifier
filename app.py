@@ -53,7 +53,7 @@ def get_files(folder):
 
 # --- INTERFACE STREAMLIT ---
 
-st.title("🤖 Agent d'Automatisation Comptable")
+st.title("Agent d'Automatisation Comptable")
 st.markdown("Ce tableau de bord pilote un **agent IA** qui scanne, analyse et classe vos factures locales.")
 
 col1, col2 = st.columns(2)
@@ -84,7 +84,7 @@ st.divider()
 
 # --- LE BOUTON D'ACTION ---
 
-if st.button("🚀 LANCER L'AGENT IA", type="primary", disabled=len(files_input)==0):
+if st.button("LANCER L'AGENT IA", type="primary", disabled=len(files_input)==0):
     
     progress_bar = st.progress(0)
     status_text = st.empty()
@@ -129,7 +129,7 @@ if st.button("🚀 LANCER L'AGENT IA", type="primary", disabled=len(files_input)
             
         final_df.to_csv(FICHIER_CSV, index=False)
         
-        status_text.success("✨ Traitement terminé avec succès !")
+        status_text.success("Traitement terminé avec succès !")
         st.balloons() # Petit effet sympa pour la fin
         
         # Bouton pour rafraîchir la page et voir les changements
